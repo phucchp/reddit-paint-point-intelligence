@@ -24,7 +24,7 @@ Nếu máy bạn đã cài đặt Node.js (và các package manager như `npm`, 
    yarn dlx serve -l 3000
    ```
 
-Sau khi chạy lệnh, hãy mở trình duyệt và truy cập: [http://localhost:3000/PainRadar.html](http://localhost:3000/PainRadar.html)
+Sau khi chạy lệnh, hãy mở trình duyệt và truy cập: [http://localhost:3000/raw-ui/PainRadar.html](http://localhost:3000/raw-ui/PainRadar.html)
 
 ---
 
@@ -41,7 +41,7 @@ Nếu máy bạn có sẵn Python (macOS thường cài sẵn):
      python -m SimpleHTTPServer 3000
      ```
 
-2. Truy cập trình duyệt tại: [http://localhost:3000/PainRadar.html](http://localhost:3000/PainRadar.html)
+2. Truy cập trình duyệt tại: [http://localhost:3000/raw-ui/PainRadar.html](http://localhost:3000/raw-ui/PainRadar.html)
 
 ---
 
@@ -49,14 +49,15 @@ Nếu máy bạn có sẵn Python (macOS thường cài sẵn):
 Nếu bạn dùng VS Code làm Editor:
 
 1. Cài đặt extension **Live Server** (của Ritwick Dey).
-2. Click chuột phải vào file `PainRadar.html` chọn **Open with Live Server** (hoặc click nút `Go Live` ở góc dưới cùng bên phải màn hình VS Code).
+2. Click chuột phải vào file `raw-ui/PainRadar.html` chọn **Open with Live Server** (hoặc click nút `Go Live` ở góc dưới cùng bên phải màn hình VS Code).
 3. Trình duyệt sẽ tự động mở trang web.
 
 ---
 
 ## Cấu trúc thư mục dự án
-* `PainRadar.html`: Điểm khởi đầu (entrypoint) của ứng dụng, nạp React, Babel qua CDN và các component.
-* `styles.css`: CSS style chính cho toàn bộ ứng dụng.
-* `data.js`: Chứa dữ liệu tĩnh (pain points, competitor reports, v.v.).
-* Các file `.jsx`: Chứa code component React (landing, dashboard, detail, ideas, v.v.).
+* `raw-ui/`: Thư mục chứa project raw ban đầu dùng làm tham khảo giao diện (UI).
+  * `PainRadar.html`: Điểm khởi đầu (entrypoint) của ứng dụng raw, nạp React, Babel qua CDN.
+  * `styles.css`: CSS style chính cho ứng dụng.
+  * `data.js`: Dữ liệu tĩnh.
+  * Các file `.jsx`: Các component React.
 * `.gitignore`: Cấu hình Git để loại trừ các file không cần thiết.
